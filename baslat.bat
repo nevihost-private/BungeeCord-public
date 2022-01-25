@@ -1,0 +1,4 @@
+@echo off
+title www.nevihost.com BungeeCord Sunucu Dosyalari Ucretsiz Optimize 
+:start
+java -Xmx512M -Xms256M -XX:+UnlockExperimentalVMOptions -XX:+AlwaysPreTouch -XX:MaxGCPauseMillis=45 -XX:TargetSurvivorRatio=90 -XX:G1NewSizePercent=50 -XX:G1MaxNewSizePercent=80 -XX:InitiatingHeapOccupancyPercent=10 -XX:G1MixedGCLiveThresholdPercent=50 -XX:+DisableExplicitGC -d64 -server -XX:-HeapDumpOnOutOfMemoryError -XX:SoftRefLRUPolicyMSPerMB=1000 -XX:-UseCompressedOops -XX:+TieredCompilation -XX:+UseLWPSynchronization -XX:+UseBiasedLocking -XX:+UseFastAccessorMethods -XX:+UseG1GC -XX:+UseStringDeduplication -XX:+ParallelRefProcEnabled -XX:+UseLargePagesInMetaspace -XX:+AggressiveOpts -XX:-DisableExplicitGC -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Duser.language=en -Duser.country=US -Dpaper.playerconnection.keepalive=120 -jar BungeeCord.jar --log-strip-color --log-append=false
